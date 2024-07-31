@@ -2,14 +2,15 @@ import csv
 from camiseta import Camiseta
 
 def escreveArquivo(tamanho, cor, estilo, tecido, marca, preco):
-    with open('camisetas.csv', 'a', newline='') as csvfile:
+    with open('camisetas.csv', 'a', newline='', encoding='utf-8', errors='ignore') as csvfile:
         escreve = csv.writer(csvfile, delimiter=',')
         escreve.writerow([tamanho, cor, estilo, tecido, marca, preco])
         print("### CAMISETA ", marca, "adicionado com sucesso! ###")
 
 camisetas = []
-print("### BEM VINDO A TELA DE CADASTRO DE CAMISETAS ###")
-while(True):
+def abrir():
+    print("### BEM VINDO A TELA DE CADASTRO DE CAMISETAS ###")
+    #while(True):
     print("\nNOVA CAMISETA:")
     tamanho = input("Tamanho: \n")
     cor = input("Cor: \n")
