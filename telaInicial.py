@@ -15,5 +15,8 @@ while(True):
 # CRUD = Create, Read, Update, Delete.
 # 1 - cadastrar
 # 2 - ler
-# 3 - atualizar
-# 4 - deletar
+# 3 - deletar
+# Adicionar visualização do
+# índice da camiseta, deleta
+# pelo índice
+# 4 - atualizar
