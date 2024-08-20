@@ -22,7 +22,4 @@ def abrir():
     
     escreveArquivo(tamanho, cor, estilo, tecido, marca, preco)
     camisetas.append(novaCamiseta)
-    # TESTE PARA VER SE O SISTEMA FUNCIONA:
-    print("### LISTA DE CAMISETAS: ###")
-    for c in camisetas:
-        print(c.marca, c.estilo, c.cor, "- R$", c.preco)
+    
